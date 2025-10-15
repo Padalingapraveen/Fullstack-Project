@@ -1,0 +1,95 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36mcom.examly:springapp[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding College Feedback System 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.4.0:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mspringapp[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mspringapp[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:compile[m [1m(default-compile)[m @ [36mspringapp[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mspringapp[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/coder/project/workspace/springapp/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mspringapp[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.4.0:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mspringapp[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.4.0:run[m [1m(default-cli)[m @ [36mspringapp[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2025-10-11T10:37:28.263Z  INFO 7671 --- [           main] c.examly.springapp.SpringappApplication  : Starting SpringappApplication using Java 17.0.15 with PID 7671 (/home/coder/project/workspace/springapp/target/classes started by coder in /home/coder/project/workspace/springapp)
+2025-10-11T10:37:28.265Z  INFO 7671 --- [           main] c.examly.springapp.SpringappApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-11T10:37:28.842Z  INFO 7671 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-11T10:37:28.903Z  INFO 7671 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2025-10-11T10:37:29.283Z  INFO 7671 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-10-11T10:37:29.294Z  INFO 7671 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-11T10:37:29.294Z  INFO 7671 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-10-11T10:37:29.332Z  INFO 7671 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-11T10:37:29.333Z  INFO 7671 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
+2025-10-11T10:37:29.357Z  INFO 7671 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-11T10:37:29.514Z  INFO 7671 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:feedbackdb user=SA
+2025-10-11T10:37:29.516Z  INFO 7671 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-11T10:37:29.524Z  INFO 7671 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:feedbackdb'
+2025-10-11T10:37:29.609Z  INFO 7671 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-11T10:37:29.654Z  INFO 7671 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-10-11T10:37:29.683Z  INFO 7671 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-11T10:37:29.853Z  INFO 7671 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-11T10:37:29.886Z  WARN 7671 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-11T10:37:29.900Z  INFO 7671 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-11T10:37:30.611Z  INFO 7671 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists campaign cascade 
+Hibernate: drop table if exists course cascade 
+Hibernate: drop table if exists feedback cascade 
+Hibernate: drop table if exists users cascade 
+Hibernate: create table campaign (active boolean not null, id bigint generated by default as identity, description varchar(255), name varchar(255), primary key (id))
+Hibernate: create table course (id bigint generated by default as identity, code varchar(255), name varchar(255), primary key (id))
+Hibernate: create table feedback (anonymous boolean not null, rating integer not null, reviewed boolean not null, campaign_id bigint, course_id bigint, created_at timestamp(6) not null, id bigint generated by default as identity, updated_at timestamp(6), user_id bigint, comments varchar(1000), admin_response varchar(255), category varchar(255), course_name varchar(255) not null, instructor_name varchar(255) not null, sentiment varchar(255), student_id varchar(255), type enum ('COURSE','FACULTY','GENERAL'), primary key (id))
+Hibernate: create table users (enabled boolean not null, created_at timestamp(6), id bigint generated by default as identity, last_login timestamp(6), department varchar(255), email varchar(255) not null, full_name varchar(255) not null, password varchar(255) not null, phone_number varchar(255), username varchar(255) not null unique, role enum ('ADMIN','FACULTY','STUDENT'), primary key (id))
+Hibernate: alter table if exists feedback add constraint FKblfihvxjdgsx6musf4dw9wtn3 foreign key (campaign_id) references campaign
+Hibernate: alter table if exists feedback add constraint FKko7f08v61t5y67teh5jxxwrea foreign key (course_id) references course
+Hibernate: alter table if exists feedback add constraint FKpwwmhguqianghvi1wohmtsm8l foreign key (user_id) references users
+2025-10-11T10:37:30.660Z  INFO 7671 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-11T10:37:31.052Z  WARN 7671 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-11T10:37:31.391Z  INFO 7671 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-10-11T10:37:31.399Z  INFO 7671 --- [           main] c.examly.springapp.SpringappApplication  : Started SpringappApplication in 3.426 seconds (process running for 3.752)
+Hibernate: select count(*) from users u1_0
+Hibernate: insert into users (created_at,department,email,enabled,full_name,last_login,password,phone_number,role,username,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into users (created_at,department,email,enabled,full_name,last_login,password,phone_number,role,username,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select count(*) from course c1_0
+Hibernate: insert into course (code,name,id) values (?,?,default)
+Hibernate: insert into course (code,name,id) values (?,?,default)
+Hibernate: select count(*) from campaign c1_0
+Hibernate: insert into campaign (active,description,name,id) values (?,?,?,default)
+2025-10-11T10:38:00.560Z  INFO 7671 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-11T10:38:00.567Z  INFO 7671 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-11T10:38:00.571Z  INFO 7671 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: drop table if exists campaign cascade 
+Hibernate: drop table if exists course cascade 
+Hibernate: drop table if exists feedback cascade 
+Hibernate: drop table if exists users cascade 
+2025-10-11T10:38:00.578Z  INFO 7671 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-11T10:38:00.581Z  INFO 7671 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

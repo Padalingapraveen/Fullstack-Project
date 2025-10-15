@@ -1,0 +1,274 @@
+/* Color Palette */
+:root {
+  /* Dark red tones - background/text */
+  --dark-primary: #7f1d1d;
+  --dark-secondary: #991b1b;
+  
+  /* Light red tones - decorative/background layering */
+  --red-light: #fef2f2;
+  --red-medium: #fecaca;
+  --red-dark: #fca5a5;
+  
+  /* Professional red accents - interactive elements/data/alerts */
+  --accent-dark: #dc2626;
+  --accent-medium: #ef4444;
+  --accent-success: #16a34a;
+  
+  /* Derived colors for better UX */
+  --text-primary: var(--dark-primary);
+  --text-secondary: var(--dark-secondary);
+  --bg-primary: var(--red-light);
+  --bg-secondary: var(--red-medium);
+  --bg-accent: var(--red-dark);
+  --interactive-primary: var(--accent-dark);
+  --interactive-secondary: var(--accent-medium);
+  --success: var(--accent-success);
+  --white: #fefefe;
+  --light-gray: #f8f9fa;
+}
+
+/* Global styles with new color scheme */
+body {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+  background: var(--bg-primary);
+}
+
+.main-content {
+  background: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+  background: linear-gradient(180deg, var(--dark-primary) 0%, var(--dark-secondary) 100%);
+}
+
+.sidebar-header h2 {
+  color: white;
+}
+
+.nav-item.active {
+  background: rgba(220, 38, 38, 0.2);
+  color: var(--accent-dark);
+  border-right: 3px solid var(--accent-dark);
+}
+
+/* Topbar */
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--bg-accent);
+}
+
+.search-box input {
+  border: 1px solid var(--bg-accent);
+}
+
+.search-box input:focus {
+  border-color: var(--interactive-primary);
+}
+
+/* Cards and containers */
+.stat-card, .chart-container, .feedback-table-container, .action-card, .campaign-card {
+  background: var(--white);
+  border: 1px solid var(--bg-secondary);
+}
+
+.stat-card.dark {
+  border-left-color: var(--accent-dark);
+}
+
+.stat-card.green {
+  border-left-color: var(--accent-success);
+}
+
+.stat-card.medium {
+  border-left-color: var(--accent-medium);
+}
+
+/* Buttons */
+.btn-primary, .feedback-form button, .auth-form button {
+  background: linear-gradient(135deg, var(--interactive-primary) 0%, var(--accent-medium) 100%);
+}
+
+.btn-primary:hover, .feedback-form button:hover, .auth-form button:hover {
+  background: linear-gradient(135deg, var(--accent-medium) 0%, var(--interactive-primary) 100%);
+}
+
+.btn-success {
+  background: var(--success);
+}
+
+.btn-secondary {
+  background: var(--red-dark);
+}
+
+/* Interactive elements */
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.notification-btn:hover, .profile-btn:hover {
+  background: var(--bg-primary);
+}
+
+/* Forms */
+.feedback-form, .auth-form, .campaign-form {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--bg-secondary);
+}
+
+.feedback-form input:focus, .auth-form input:focus, .campaign-form input:focus,
+.feedback-form select:focus, .auth-form select:focus, .campaign-form select:focus,
+.feedback-form textarea:focus, .campaign-form textarea:focus {
+  border-color: var(--interactive-primary);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* Progress bars and charts */
+.bar-fill {
+  background: linear-gradient(180deg, var(--accent-dark), var(--dark-secondary));
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, var(--red-dark), var(--dark-secondary));
+}
+
+.trend-fill {
+  background: var(--accent-medium);
+}
+
+/* Status indicators */
+.campaign-status.active {
+  color: var(--success);
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.role-badge.student {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--accent-dark);
+}
+
+.role-badge.faculty {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--accent-medium);
+}
+
+.role-badge.admin {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--success);
+}
+
+/* Tables */
+.feedback-table th, .admin-table th {
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+}
+
+.feedback-table td, .admin-table td {
+  border-bottom: 1px solid var(--bg-secondary);
+}
+
+/* Notifications */
+.notifications-dropdown {
+  background: var(--white);
+  border: 1px solid var(--bg-accent);
+}
+
+.notifications-header {
+  background: var(--bg-primary);
+}
+
+.notification-item.unread {
+  background: rgba(220, 38, 38, 0.05);
+}
+
+.unread-dot {
+  background: var(--accent-dark);
+}
+
+/* Star rating */
+.star.active, .star:hover {
+  color: #ffd700;
+}
+
+/* Sentiment analysis */
+.sentiment-fill.positive {
+  background: var(--success);
+}
+
+.sentiment-fill.negative {
+  background: #ef4444;
+}
+
+.sentiment-fill.neutral {
+  background: var(--red-dark);
+}
+
+/* Admin dashboard */
+.admin-sidebar {
+  background: var(--dark-primary);
+}
+
+.admin-nav-item.active {
+  background: var(--accent-dark);
+}
+
+.admin-nav-item:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Alerts and messages */
+.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid #ef4444;
+}
+
+.success {
+  background-color: rgba(78, 177, 75, 0.1);
+  border: 1px solid var(--success);
+}
+
+/* Links */
+.auth-link .link-btn {
+  color: var(--accent-dark);
+}
+
+.mark-all-read {
+  color: var(--accent-dark);
+}
+
+/* Sorting and Filtering Areas */
+.table-header, .admin-filters, .filter-section, .simple-controls, .admin-controls {
+  background: var(--white);
+}
+
+.table-filters, .sort-bar, .course-filter {
+  background: var(--white);
+}
+
+/* Replace blue colors with red in filtering areas */
+.admin-filters input:focus, .admin-filters select:focus,
+.filter-input:focus, .filter-select:focus,
+.course-filter input:focus {
+  border-color: var(--accent-dark);
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.25);
+}
+
+.sort-options button.active, .sort-btn.active {
+  background: var(--accent-dark);
+  color: white;
+}
+
+.sort-direction, .direction-btn {
+  border-color: var(--accent-dark);
+  color: var(--accent-dark);
+}
+
+.sort-direction:hover, .direction-btn:hover {
+  background: var(--accent-dark);
+  color: white;
+}
